@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: Hotel_Reservations_Project
+Version: 0.1
+Author: RahulRayi
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: google-cloud-storage
+Requires-Dist: scikit-learn
+Requires-Dist: pyyaml
