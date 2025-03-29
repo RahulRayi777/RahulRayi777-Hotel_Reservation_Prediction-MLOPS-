@@ -21,7 +21,7 @@ COPY . .
 RUN pip install --no-cache-dir -e .
 
 # Run training pipeline
-RUN python pipeline/training_pipeline.py
+RUN python pipeline/training_pipline.py
 
 # Expose port
 EXPOSE 5000
