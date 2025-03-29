@@ -1,7 +1,6 @@
 # 🔥 Line-by-Line Explanation with Example
 dockerfile
-Copy
-Edit
+
 FROM python:slim
 🎯 Example:
 Imagine you want to bake a cake.
