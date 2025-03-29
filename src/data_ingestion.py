@@ -8,29 +8,6 @@ from config.paths_config import *
 from utils.common_functions import read_yaml
 
 logger = get_logger(__name__)
-print(f"CONFIG_PATH: {CONFIG_PATH}")
-
-
-
-
-
-
-import os
-
-# Set the path to your service account JSON key
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = r"C:\Users\naray\OneDrive\Pictures\Desktop\01. My Learning\buoyant-yew-454906-h3-133794db6c22.json"
-
-
-from google.cloud import storage
-
-try:
-    client = storage.Client()
-    buckets = list(client.list_buckets())  # List all GCS buckets
-    print("✅ Authentication Successful! Buckets:", buckets)
-except Exception as e:
-    print("❌ Authentication Failed!", e)
-
-
 
 class DataIngestion:
     def __init__(self,config):
