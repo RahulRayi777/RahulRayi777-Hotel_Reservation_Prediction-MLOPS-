@@ -39,23 +39,19 @@ You tell your helper:
 This file is needed by LightGBM (which is like an important tool in your kitchen).
 
 dockerfile
-Copy
-Edit
-COPY . .
+.
 🎯 Example:
 "Bring all your recipe books & ingredients from your home (your project folder) to the kitchen (container)."
 
 dockerfile
-Copy
-Edit
+
 RUN pip install --no-cache-dir -e .
 🎯 Example:
 "Read the recipe book (requirements.txt) and bring all the spices, flour, sugar (Python packages)."
 pip install installs all required libraries.
 
 dockerfile
-Copy
-Edit
+
 RUN python pipeline/training_pipeline.py
 🎯 Example:
 "Before serving food, bake the cake."
