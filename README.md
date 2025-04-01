@@ -156,18 +156,8 @@ Use GCS buckets for storing raw and processed data, as well as model artifacts.
 
 Utilize Google Cloud Logging and Monitoring for performance tracking.
 
-# Contributing
-## Contributions are welcome! To propose a change:
 
-Fork the repository.
-
-Create a new branch: git checkout -b feature/your-feature.
-
-Commit your changes: git commit -m "Add a new feature".
-
-Push to your branch: git push origin feature/your-feature.
-
-Create a Pull Request on the main repository.
+ 
 ## Deployment Interface 
 
 
@@ -176,17 +166,15 @@ Create a Pull Request on the main repository.
 
 ![Project Image](https://github.com/RahulRayi777/RahulRayi777-Hotel_Reservation_Prediction-MLOPS-/blob/master/App_Interface.png)
 
-## 📌 Project Overview
-This project focuses on predicting hotel reservations using machine learning and MLOps practices. The goal is to develop a predictive model that determines whether a customer will confirm or cancel their reservation based on various features. The project follows MLOps principles to ensure reproducibility, scalability, and deployment readiness.
 
-## 🚀 Features
-- Database setup using Google Cloud Platform (GCP) Buckets
-- Data ingestion and preprocessing
-- Exploratory Data Analysis (EDA) for insights
-- Model training and experiment tracking using MLflow
-- Training pipeline with data and code versioning
-- User application development using Flask and ChatGPT
-- CI/CD deployment using Jenkins and Google Cloud Run
+
+## 📊 Dataset
+The dataset contains customer reservation details, including:
+- Booking date, check-in date, check-out date
+- Number of guests, room type, special requests
+- Payment method, cancellation history
+
+
 
 ## 🛠️ Technologies Used
 - **Programming Language:** Python
@@ -201,75 +189,7 @@ The dataset contains customer reservation details, including:
 - Number of guests, room type, special requests
 - Payment method, cancellation history
 
-## 🔧 Installation & Setup
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/RahulRayi777/RahulRayi777-Hotel_Reservation_Prediction-MLOPS.git
  
-
----
-
-## 🛠️ Technologies Used
-- **Programming Language:** Python
-- **Libraries:** Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn
-- **Machine Learning Models:** Logistic Regression, Random Forest, Gradient Boosting
-- **MLOps Tools:** MLflow, Docker, GitHub Actions, Jenkins
-- **Deployment:** Flask/FastAPI, Google Cloud Run
-
-## 📊 Dataset
-The dataset contains customer reservation details, including:
-- Booking date, check-in date, check-out date
-- Number of guests, room type, special requests
-- Payment method, cancellation history
-
-## 🔧 Installation & Setup
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/RahulRayi777/RahulRayi777-Hotel_Reservation_Prediction-MLOPS.git
-   ```
-2. Navigate to the project folder:
-   ```bash
-   cd RahulRayi777-Hotel_Reservation_Prediction-MLOPS
-   ```
-3. Create a virtual environment:
-   ```bash
-   python -m venv env
-   source env/bin/activate  # On Windows use: env\Scripts\activate
-   ```
-4. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-## 📈 Model Training & Evaluation
-1. Set up the database and ingest data from GCP:
-   ```bash
-   python src/data_ingestion.py
-   ```
-2. Run data preprocessing:
-   ```bash
-   python src/preprocessing.py
-   ```
-3. Train the model and track experiments using MLflow:
-   ```bash
-   python src/train.py
-   ```
-4. Evaluate the model:
-   ```bash
-   python src/evaluate.py
-   ```
-
-## 🖥️ Deployment
-To deploy the model using Flask:
-```bash
-python app.py
-```
-
-For Docker-based deployment:
-```bash
-docker build -t hotel_reservation_prediction .
-docker run -p 5000:5000 hotel_reservation_prediction
-```
 
 For CI/CD deployment using Jenkins and Google Cloud Run:
 1. Set up a Jenkins pipeline.
@@ -289,11 +209,18 @@ For CI/CD deployment using Jenkins and Google Cloud Run:
 - Deploy the model as a real-time cloud-based API
 - Implement automated model retraining based on performance
 
-## 🤝 Contributing
-Contributions are welcome! Feel free to fork the repo and submit pull requests.
+# Contributing
+## Contributions are welcome! To propose a change:
 
-## 📝 License
-This project is licensed under the MIT License.
+Fork the repository.
+
+Create a new branch: git checkout -b feature/your-feature.
+
+Commit your changes: git commit -m "Add a new feature".
+
+Push to your branch: git push origin feature/your-feature.
+
+Create a Pull Request on the main repository.
 
 ## 📩 Contact
 For any queries, reach out to [Rahul Rayi](https://github.com/RahulRayi777).
