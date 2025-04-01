@@ -170,10 +170,132 @@ Push to your branch: git push origin feature/your-feature.
 Create a Pull Request on the main repository.
 ## Deployment Interface 
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+
+
+# Hotel Reservation Prediction - MLOps
+
+![Project Image](https://github.com/RahulRayi777/RahulRayi777-Hotel_Reservation_Prediction-MLOPS-/blob/master/App_Interface.png)
+
+## 📌 Project Overview
+This project focuses on predicting hotel reservations using machine learning and MLOps practices. The goal is to develop a predictive model that determines whether a customer will confirm or cancel their reservation based on various features. The project follows MLOps principles to ensure reproducibility, scalability, and deployment readiness.
+
+## 🚀 Features
+- Database setup using Google Cloud Platform (GCP) Buckets
+- Data ingestion and preprocessing
+- Exploratory Data Analysis (EDA) for insights
+- Model training and experiment tracking using MLflow
+- Training pipeline with data and code versioning
+- User application development using Flask and ChatGPT
+- CI/CD deployment using Jenkins and Google Cloud Run
+
+## 🛠️ Technologies Used
+- **Programming Language:** Python
+- **Libraries:** Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn
+- **Machine Learning Models:** Logistic Regression, Random Forest, Gradient Boosting
+- **MLOps Tools:** MLflow, Docker, GitHub Actions, Jenkins
+- **Deployment:** Flask/FastAPI, Google Cloud Run
+
+## 📊 Dataset
+The dataset contains customer reservation details, including:
+- Booking date, check-in date, check-out date
+- Number of guests, room type, special requests
+- Payment method, cancellation history
+
+## 🔧 Installation & Setup
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/RahulRayi777/RahulRayi777-Hotel_Reservation_Prediction-MLOPS.git
+ 
 
 ---
-## **Interactive Guide: Jenkins & Docker Setup for MLOps Project**
 
----
+## 🛠️ Technologies Used
+- **Programming Language:** Python
+- **Libraries:** Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn
+- **Machine Learning Models:** Logistic Regression, Random Forest, Gradient Boosting
+- **MLOps Tools:** MLflow, Docker, GitHub Actions, Jenkins
+- **Deployment:** Flask/FastAPI, Google Cloud Run
+
+## 📊 Dataset
+The dataset contains customer reservation details, including:
+- Booking date, check-in date, check-out date
+- Number of guests, room type, special requests
+- Payment method, cancellation history
+
+## 🔧 Installation & Setup
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/RahulRayi777/RahulRayi777-Hotel_Reservation_Prediction-MLOPS.git
+   ```
+2. Navigate to the project folder:
+   ```bash
+   cd RahulRayi777-Hotel_Reservation_Prediction-MLOPS
+   ```
+3. Create a virtual environment:
+   ```bash
+   python -m venv env
+   source env/bin/activate  # On Windows use: env\Scripts\activate
+   ```
+4. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+## 📈 Model Training & Evaluation
+1. Set up the database and ingest data from GCP:
+   ```bash
+   python src/data_ingestion.py
+   ```
+2. Run data preprocessing:
+   ```bash
+   python src/preprocessing.py
+   ```
+3. Train the model and track experiments using MLflow:
+   ```bash
+   python src/train.py
+   ```
+4. Evaluate the model:
+   ```bash
+   python src/evaluate.py
+   ```
+
+## 🖥️ Deployment
+To deploy the model using Flask:
+```bash
+python app.py
+```
+
+For Docker-based deployment:
+```bash
+docker build -t hotel_reservation_prediction .
+docker run -p 5000:5000 hotel_reservation_prediction
+```
+
+For CI/CD deployment using Jenkins and Google Cloud Run:
+1. Set up a Jenkins pipeline.
+2. Configure Google Cloud Run for automated deployment.
+3. Monitor logs and updates.
+
+## 📜 MLOps Workflow
+1. **Version Control:** GitHub for code and model tracking
+2. **Experiment Tracking:** MLflow to log model performance
+3. **Automation:** GitHub Actions and Jenkins for CI/CD pipeline
+4. **Containerization:** Docker for scalable deployment
+5. **Deployment:** Google Cloud Run for cloud-based hosting
+6. **Monitoring:** MLflow dashboard for model monitoring
+
+## 📌 Future Enhancements
+- Integrate deep learning models for better accuracy
+- Deploy the model as a real-time cloud-based API
+- Implement automated model retraining based on performance
+
+## 🤝 Contributing
+Contributions are welcome! Feel free to fork the repo and submit pull requests.
+
+## 📝 License
+This project is licensed under the MIT License.
+
+## 📩 Contact
+For any queries, reach out to [Rahul Rayi](https://github.com/RahulRayi777).
+
 
